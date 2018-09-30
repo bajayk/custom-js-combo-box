@@ -4,6 +4,7 @@ body{
 
 #custom-combobox-1{
     width:120px;
-    margin-left:100px;
-    margin-top:100px;
+    left:100px;
+    top:100px;
+    position: absolute;
 }
