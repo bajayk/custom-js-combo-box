@@ -1,0 +1,30 @@
+.custom-combobox {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
+  border: thin solid #bababa;
+}
+.custom-combobox .selected-option {
+  background-image: url("down-arrow-white.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding: 5px 10px;
+  background-color: #3d696f;
+  color: white;
+}
+.custom-combobox .selected-option:hover {
+  background-color: #b0cdd1;
+  color: white;
+}
+.custom-combobox .options {
+  display: none;
+}
+.custom-combobox .options .option {
+  padding: 5px 10px;
+  border-top: solid thin #bababa;
+}
+.custom-combobox .options .option.active, .custom-combobox .options .option:hover {
+  background-color: #b0cdd1;
+  color: white;
+}
+
+/*# sourceMappingURL=custom-combo.css.map */

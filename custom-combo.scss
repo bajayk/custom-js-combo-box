@@ -1,0 +1,45 @@
+$blue:#b0cdd1;
+$option_text_padding:5px 10px;
+
+@mixin hover{
+    background-color:$blue;
+    color:white;
+}
+
+
+
+.custom-combobox{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    border:thin solid #bababa;
+    .selected-option{
+        background-image:url("down-arrow-white.png");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        padding: $option_text_padding;
+        background-color:#3d696f;
+        color:white;
+    }
+
+    .selected-option:hover{
+       @include hover;
+       
+    }
+
+    .options{
+
+        display:none;
+        .option{
+            padding: $option_text_padding;
+            border-top: solid thin #bababa;
+        }
+
+        .option.active, .option:hover{
+            @include hover;
+        }
+
+    }
+
+    
+}
+
